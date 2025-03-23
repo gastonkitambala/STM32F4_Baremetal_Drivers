@@ -1,0 +1,21 @@
+19:56:58 **** Incremental Build of configuration Debug for project 20_Uart_tx_dma ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -c -I../Inc -I"E:/Embedded_Systems/STM32/STM32F4_bare_metal_Workspace/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"E:/Embedded_Systems/STM32/STM32F4_bare_metal_Workspace/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "20_Uart_tx_dma.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Embedded_Systems\STM32\STM32F4_bare_metal_Workspace\20_Uart_tx_dma\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20_Uart_tx_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20_Uart_tx_dma.elf
+ 
+arm-none-eabi-size  20_Uart_tx_dma.elf 
+arm-none-eabi-objdump -h -S 20_Uart_tx_dma.elf  > "20_Uart_tx_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+   1432	      0	   1568	   3000	    bb8	20_Uart_tx_dma.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20_Uart_tx_dma.list
+ 
+19:57:11 **** Incremental Build of configuration Debug for project 20_Uart_tx_dma ****
+make -j12 all 
+arm-none-eabi-size  20_Uart_tx_dma.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1432	      0	   1568	   3000	    bb8	20_Uart_tx_dma.elf
+Finished building: default.size.stdout
+ 

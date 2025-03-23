@@ -1,0 +1,10 @@
+21:59:31 **** Incremental Build of configuration Debug for project 18_Systick_interrupt ****
+make -j12 all 
+arm-none-eabi-size  18_Systick_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5344	     92	   1900	   7336	   1ca8	18_Systick_interrupt.elf
+Finished building: default.size.stdout
+ 
+
+21:59:32 Build Finished. 0 errors, 0 warnings. (took 172ms)
+
